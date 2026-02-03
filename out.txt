@@ -1,0 +1,6 @@
+include
+Makefile
+mini-shell
+out.txt
+README.md
+src

@@ -1,7 +1,7 @@
 # 🐚 Mini Linux Shell (POSIX)
 
 A Unix-like command-line shell implemented in **C** using **POSIX system calls**, built to understand how real shells interact with the Linux kernel.  
-This project focuses on **process management, job control, signal handling, and I/O redirection**.
+This project focuses on **process management, job control, signal handling, pipes, and I/O redirection**.
 
 ---
 
@@ -20,6 +20,8 @@ This project focuses on **process management, job control, signal handling, and 
 - Input redirection (`<`)
 - Output redirection (`>`, `>>`)
 - Background execution using `&`
+- Single pipe support (`|`)
+- Background pipelines
 - Signal handling:
   - `SIGCHLD` for cleaning up background processes (no zombies)
   - `SIGINT` (Ctrl+C) to terminate foreground commands without exiting the shell
@@ -34,6 +36,7 @@ This project demonstrates hands-on understanding of:
 
 - POSIX process lifecycle (`fork`, `execvp`, `waitpid`)
 - File descriptors and I/O redirection (`open`, `dup2`, `close`)
+- Pipes and inter-process communication (`pipe`)
 - Signal handling using `sigaction`
 - Foreground and background job control
 - Command parsing and argument handling
