@@ -1,0 +1,7 @@
+# Compiled object files
+*.o
+*.txt
+
+# Binaries
+linuxshell
+a.out
